@@ -1,0 +1,18 @@
+<div class="row">
+	<h1>Post your comments here...</h1><hr/>
+	<div class="col-md-6">
+		<form method="post" action="/article/comment/save"> 
+			<input type="hidden" name="csrf" value="csrf" />
+			<input type="hidden" name="article[_id]" value="{{ article._id }}" />
+			<div class="form-group">
+				<label for="title">Full Name:</label>
+				<input type="text" class="form-control" name="article[comment][fullname]" value="" >
+			</div>
+			<div class="form-group">
+				<label for="body">Body:</label>
+				<textarea class="form-control" name="article[comment][body]"></textarea>
+			</div>			
+			<input type="submit" value="Comment" name="submit" class="btn btn-primary"/>
+		</form>
+	</div>
+</div>

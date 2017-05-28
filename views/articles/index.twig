@@ -1,0 +1,37 @@
+{% include 'includes/header.twig' %}
+<div class="row">
+	<h1>
+		<span>Article List</span>
+		<span class="pull-right"><a href="/article/new" class="btn btn-primary">Add Article</a></span>
+	</h1>
+	<hr/>
+	<div class="col-md-12">
+		{{ messages() }}
+		<table class="table table-condensed">
+			<thead>
+				<tr>
+					<th>Article</th>
+					<th>Content</th>
+					<th>Published</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for article in articles %}
+					<tr>
+						<td><a href="/article/view/{{ article._id }}">{{ article.title }}</a></td>
+						<td>{{ article.body }}</td>
+						<td class="date">
+							<p>Published: {{ article.created_at }}</p>
+						</td>
+						<td>
+							<a href="/article/edit/{{ article._id }}" class="btn btn-primary">Edit Article</a>
+							<a href="/article/delete/{{ article._id }}" class="btn btn-danger">Delete Article</a>
+						</td>
+					</tr>
+				{% endfor %}
+			</body>
+		</table>
+	</div>
+</div>
+{% include 'includes/footer.twig' %}

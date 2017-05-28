@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="col-md-8">
+		{% for comment in comments %}
+			<div class="post">
+				<div class="date">
+					<p>Published: {{ comment.created_at }}</p>
+				</div>
+				<h1><a href="javascript;;">{{ comment.fullname }}</a></h1>
+				<p>{{ comment.body }}</p>
+			</div>
+		{% endfor %}
+	</div>	
+</div>
