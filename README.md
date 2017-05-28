@@ -1,4 +1,4 @@
-# node-express-mongoose
+# Node Express Mongoose Blog Post Tutorial
 
 Required Node Js packages
 
