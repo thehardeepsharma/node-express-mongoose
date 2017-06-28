@@ -1,5 +1,5 @@
 var Article = require('../models/ArticleModel');
-var articleModule = require('article.js')
+var articleModule = require('../modules/article.js')
 
 module.exports = function(app) {
 	

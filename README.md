@@ -1,24 +1,18 @@
-# Node Express Mongoose Blog Post Tutorial
+# node-login-logout
+This is Node Express Mongoose Blog Post Tutorial
 
-Required Node Js packages
+## Install Required Node Js packages
 
-Twig
-npm install twig
+ - Install NPM package:
 
-Body Parser
-npm install body-parser
+```shell
+npm install
+```
 
-Express Js
-npm install express
+## Start
 
-Express Session
-npm install express-session
+- Start using given command
 
-Connect Flash
-npm install connect-flash
-
-Express Messages
-npm install express-messages
-
-MongoDB ODM
-npm install mongoose
+```shell
+node app.js
+```
